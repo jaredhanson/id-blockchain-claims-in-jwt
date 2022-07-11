@@ -1,7 +1,7 @@
 ---
 title: Blockchain Claims for use in JWT
 author: Jared Hanson (@jaredhanson)
-discussions-to: https://github.com/ChainAgnostic/CAIPs/pull/1
+discussions-to: https://github.com/jaredhanson/id-blockchain-claims-in-jwt
 status: Draft
 type: Standard
 created: 2022-07-11
