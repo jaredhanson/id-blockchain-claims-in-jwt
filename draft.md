@@ -43,16 +43,17 @@ account.  The value is a string where [CAIP-2](https://github.com/ChainAgnostic/
 is the recommended format.
 
 `blockchain_account`: Blockchain account of the entity identified by the JWT.
-The value is a string where [CAIP-10](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md)
-is the recommended format.  If the JWT has a `blockchain` claim, the value may
-contain only the `account_address` portion and omit the `chain_id` prefix, in
-which case the account identified by this claim is in the blockchain identified
-by the `blockchain` claim.
+In the general case, the value is an array of strings where [CAIP-10](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md)
+is the recommended format for each string.  In the special case when only one
+account is being conveyed, the value may be a single string.  If the JWT has a
+`blockchain` claim, the value(s) may contain only the `account_address` portion
+and omit the `chain_id` prefix, in which case the account(s) identified by this
+claim are in the blockchain identified by the `blockchain` claim.
 
 `blockchain_assets`: Blockchain assets owned by the entity identified by the
 JWT.  The value is an array of strings where [CAIP-19](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-19.md)
 is the recommended format for each string.  If the JWT has a `blockchain` claim,
-the value may contain only the `asset_namespace:asset_reference` portion and
+the values may contain only the `asset_namespace:asset_reference` portion and
 omit the `chain_id` prefix, in which case the assets identified by this claim
 are in the blockchain identified by the `blockchain` claim.
 
