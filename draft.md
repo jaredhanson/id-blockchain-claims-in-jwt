@@ -24,7 +24,7 @@ assets.
 ## Motivation
 
 Blockchain accounts authenticate with off-chain services using [Sign in With X
-(SWIx)](https://github.com/ChainAgnostic/CAIPs/pull/122).  Once authenticated,
+(SIWx)](https://github.com/ChainAgnostic/CAIPs/pull/122).  Once authenticated,
 off-chain APIs need to be able to identity accounts and assets in order to
 authorize access (often referred to as token gating).
 
