@@ -38,10 +38,13 @@ integration in off-chain applications.
 
 ### Claims
 
-`blockchain_accounts`: Blockchain accounts of the entity identified by the JWT. The value is an array of strings where [CAIP-10](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md) is the recommended format, or an array of objects with the following shape:
+`blockchain_accounts`: Blockchain accounts of the entity identified by the JWT.
+The value is an array of strings where [CAIP-10](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md)
+is the recommended format, or an array of objects with the following shape:
   - `id`: a string value where [CAIP-10](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md)
 is the recommended format
-  - `assets` (optional): Blockchain assets owned by this account. The value is an array of strings where [CAIP-19](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-19.md)
+  - `assets` (optional): Blockchain assets owned by this account. The value is
+an array of strings where [CAIP-19](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-19.md)
 is the recommended format for each string.
 
 ## Rationale
@@ -69,7 +72,9 @@ Not applicable.
   "iss": "https://authorization-server.example.com/"
   "sub": "5ba552d67",
   "aud": "https://rs.example.com/",
-  "blockchain_accounts": ["eip155:1:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb"],
+  "blockchain_accounts": [
+    "eip155:1:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb"
+  ],
   "exp": 1639528912,
   "iat": 1618354090
 }
@@ -80,7 +85,7 @@ Not applicable.
   "aud": "https://rs.example.com/",
   "blockchain_accounts": [
     {
-      "id": "eip155:1:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb"]
+      "id": "eip155:1:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb"
     }
   ],
   "exp": 1639528912,
@@ -93,7 +98,7 @@ Not applicable.
   "aud": "https://rs.example.com/",
   "blockchain_accounts": [
     {
-      "id": "eip155:1:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb"],
+      "id": "eip155:1:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb",
       "assets": [
         "eip155:1/erc721:0x06012c8cf97BEaD5deAe237070F9587f8E7A266d/771769"
       ]
@@ -110,19 +115,19 @@ Not applicable.
   "aud": "https://rs.example.com/",
   "blockchain_accounts": [
     {
-      "id": "eip155:1:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb"],
+      "id": "eip155:1:0xab16a96d359ec26a11e2c2b3d8f8b8942d5bfcdb",
       "assets": [
         "eip155:1/erc721:0x06012c8cf97BEaD5deAe237070F9587f8E7A266d/771769"
       ]
     },
     {
-      "id": "eip155:1:0xbc52a96d359ec26a11e2c2b3d8f8b8942df7a935"],
+      "id": "eip155:1:0xbc52a96d359ec26a11e2c2b3d8f8b8942df7a935",
       "assets": [
         "eip155:1/erc721:0x06012c8cf97BEaD5deAe237070F9587f8E7A266d/123456"
       ]
     },
     {
-      "id": "solana:4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZ:JRm2CkWHxiTxfMUPP7UQEZjRsr9beXRmH1evc2fWgvHu"]
+      "id": "solana:4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZ:JRm2CkWHxiTxfMUPP7UQEZjRsr9beXRmH1evc2fWgvHu"
     }
   ],
   "exp": 1639528912,
