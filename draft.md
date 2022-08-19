@@ -1,6 +1,6 @@
 ---
 title: Blockchain Claims for use in JWT
-author: Jared Hanson (@jaredhanson)
+author: Jared Hanson (@jaredhanson), Paolo Lim (@paololim), Ryan Gilbert (@RyanTimesTen)
 discussions-to: https://github.com/jaredhanson/id-blockchain-claims-in-jwt
 status: Draft
 type: Standard
